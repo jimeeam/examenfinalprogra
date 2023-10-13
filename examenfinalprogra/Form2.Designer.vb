@@ -22,6 +22,7 @@ Partial Class Form2
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form2))
         Label1 = New Label()
         Button1 = New Button()
         Button2 = New Button()
@@ -97,6 +98,7 @@ Partial Class Form2
         Controls.Add(Button1)
         Controls.Add(Label1)
         ForeColor = SystemColors.ControlText
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form2"
         Text = "Form2"
         ResumeLayout(False)
