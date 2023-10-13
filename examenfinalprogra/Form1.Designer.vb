@@ -43,7 +43,7 @@ Partial Class Form1
         ' TextBox1
         ' 
         TextBox1.BackColor = SystemColors.ScrollBar
-        TextBox1.Location = New Point(424, 161)
+        TextBox1.Location = New Point(441, 165)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(100, 23)
         TextBox1.TabIndex = 1
@@ -51,7 +51,7 @@ Partial Class Form1
         ' TextBox2
         ' 
         TextBox2.BackColor = SystemColors.ScrollBar
-        TextBox2.Location = New Point(424, 97)
+        TextBox2.Location = New Point(441, 97)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(100, 23)
         TextBox2.TabIndex = 2
