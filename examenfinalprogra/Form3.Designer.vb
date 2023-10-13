@@ -22,11 +22,13 @@ Partial Class Form3
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form3))
         Label1 = New Label()
         TextBox1 = New TextBox()
         TextBox2 = New TextBox()
         TextBox3 = New TextBox()
         Button1 = New Button()
+        Button2 = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -66,6 +68,7 @@ Partial Class Form3
         ' Button1
         ' 
         Button1.BackColor = Color.Silver
+        Button1.Font = New Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Button1.Location = New Point(351, 290)
         Button1.Name = "Button1"
         Button1.Size = New Size(75, 23)
@@ -73,17 +76,30 @@ Partial Class Form3
         Button1.Text = "resultado"
         Button1.UseVisualStyleBackColor = False
         ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.Silver
+        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Button2.Location = New Point(671, 397)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(75, 23)
+        Button2.TabIndex = 5
+        Button2.Text = "atrás"
+        Button2.UseVisualStyleBackColor = False
+        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Tomato
         ClientSize = New Size(800, 450)
+        Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(TextBox3)
         Controls.Add(TextBox2)
         Controls.Add(TextBox1)
         Controls.Add(Label1)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form3"
         Text = "operar"
         ResumeLayout(False)
@@ -95,4 +111,5 @@ Partial Class Form3
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

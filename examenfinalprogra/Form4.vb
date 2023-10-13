@@ -6,4 +6,8 @@
         resultado = a - b
         TextBox3.Text = resultado
     End Sub
+
+    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Form2.Show()
+    End Sub
 End Class

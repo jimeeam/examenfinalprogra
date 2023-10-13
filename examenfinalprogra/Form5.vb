@@ -6,4 +6,9 @@
         resultado = a * b
         TextBox3.Text = resultado
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Form2.Show()
+
+    End Sub
 End Class
